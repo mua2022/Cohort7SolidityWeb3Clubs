@@ -25,7 +25,7 @@ contract BookStore is Ownable {
     event SubscriptionAdded(address indexed subscriber);
     event SubscriptionRemoved(address indexed subscriber);
 
-    constructor(address initialOwner) Ownable() {
+    constructor(address initialOwner) Ownable(initialOwner) {
         transferOwnership(initialOwner);
     }
 
